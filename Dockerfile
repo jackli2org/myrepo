@@ -24,6 +24,5 @@ CMD [ "npm", "start" ]
 WORKDIR /src/app
 CMD [ "npm", "test" ]
 WORKDIR /src/app
-RUN docker-compose build
-RUN docker-compose up
+ENTRYPOINT ["entrypoint"]
 
