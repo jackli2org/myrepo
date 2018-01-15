@@ -26,7 +26,7 @@
     "eslint": "eslint test.js",
     "start": "node src/",
     "startWithInit": "INITFLAG=1 node src/",
-    "mocha": "mocha test/ --recursive --exit"
+    "mocha": "mocha testfile"
   },
   "dependencies": {
     "axios": "^0.17.1",
