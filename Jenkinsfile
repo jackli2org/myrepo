@@ -2,7 +2,7 @@ node {
     def app
     def prefix = "licTest"
     def name = "myrepo"
-    def docker_image = "${prefix}/${name}:DEV-${env.BUILD_ID}"
+    def docker_image = "${prefix}/${name}:master-${env.BUILD_ID}"
 
     stage("Pull GIT Repo") {
             checkout scm
