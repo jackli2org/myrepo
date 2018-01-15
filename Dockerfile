@@ -20,4 +20,4 @@ COPY . .
 
 EXPOSE 9010
 CMD [ "npm", "start" ]
-
+CMD [ "npm", "test" ]
