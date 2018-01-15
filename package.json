@@ -22,8 +22,8 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "test": "npm run eslint && npm run mocha && node test.js",
-    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "test": "node test.js",
+    "eslint": "eslint test.js",
     "start": "node src/",
     "startWithInit": "INITFLAG=1 node src/",
     "mocha": "mocha test/ --recursive --exit"
@@ -61,4 +61,3 @@
     "request-promise": "^4.2.2"
   }
 }
-
