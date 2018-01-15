@@ -1,0 +1,64 @@
+{
+  "name": "myrepo",
+  "description": "realtime demo",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Jack.li2",
+    "email": "jack.li2@nirvana-info.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "node src/",
+    "startWithInit": "INITFLAG=1 node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bad-words": "^1.6.1",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "cors": "^2.8.4",
+    "deep-equal": "^1.0.1",
+    "enumify-mod": "^1.0.2",
+    "feathers": "^2.2.3",
+    "feathers-configuration": "^0.4.2",
+    "feathers-errors": "^2.9.2",
+    "feathers-hooks": "^2.1.1",
+    "feathers-hooks-common": "^3.10.0",
+    "feathers-memory": "^1.3.1",
+    "feathers-rest": "^1.8.0",
+    "feathers-sequelize": "^2.4.0",
+    "feathers-socketio": "^2.0.0",
+    "helmet": "^3.9.0",
+    "jwt-decode": "^2.2.0",
+    "jwt-simple": "^0.5.1",
+    "memory-cache": "^0.2.0",
+    "pg": "^7.4.0",
+    "sequelize": "^4.28.0",
+    "serve-favicon": "^2.4.5",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "mocha": "^4.0.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
+
