@@ -22,7 +22,7 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "test": "npm run eslint && npm run mocha",
+    "test": "npm run eslint && npm run mocha && node test.js",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node src/",
     "startWithInit": "INITFLAG=1 node src/",
