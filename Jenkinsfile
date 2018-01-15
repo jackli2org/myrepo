@@ -1,6 +1,6 @@
 node {
     def app
-    def prefix = "licTest"
+    def prefix = "lictest"
     def name = "myrepo"
     def docker_image = "${prefix}/${name}:master-${env.BUILD_ID}"
 
