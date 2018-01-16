@@ -25,7 +25,5 @@ EXPOSE 9010
 CMD [ "npm", "start" ]
 
 WORKDIR /src/app
-CMD [ "npm", "test" ]
-WORKDIR /src/app
 ENTRYPOINT ["entrypoint"]
 

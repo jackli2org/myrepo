@@ -7,6 +7,12 @@ node {
     stage("Pull GIT Repo") {
             checkout scm
     }
+    stage("Test") {
+      steps {
+	 sh './test.sh'
+         sh 'cat mochawesome-report/mochawesome.json'
+	}
+    }
 
     stage("Build and start test image") {
             app = docker.build docker_image
