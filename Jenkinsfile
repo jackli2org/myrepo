@@ -8,6 +8,11 @@ node {
             checkout scm
     }
     stage("Test") {
+         sh 'pwd'
+         sh 'ls'
+         sh 'docker-compose build'
+         sh 'docker-compose up'
+         sh 'docker-compose down'
 	// sh './test.sh'
         // sh 'cat mochawesome-report/mochawesome.json'
     }
@@ -15,6 +20,11 @@ node {
     stage("Build and start test image") {
             app = docker.build docker_image
             app.inside {
+                       sh 'pwd'
+         sh 'ls'
+         sh 'docker-compose build'
+         sh 'docker-compose up'
+         sh 'docker-compose down'
               sh 'pwd'
               sh 'ls'
               sh 'npm install'
