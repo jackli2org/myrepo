@@ -12,6 +12,8 @@ node {
             app = docker.build docker_image
             app.inside {
               sh 'pwd'
+              sh 'ls'
+              sh 'npm install'
               sh 'npm test'
               sh 'echo "test passed"'
 	    }
