@@ -17,7 +17,7 @@ RUN npm install
 
 COPY mochafile.js ./
 
-npm test
+RUN npm test
 
 # Bundle app source
 COPY . .
