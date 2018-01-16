@@ -13,7 +13,7 @@ node {
          sh 'docker-compose build'
          sh 'docker-compose up'
          sh 'docker-compose down'
-	// sh './test.sh'
+        	// sh './test.sh'
         // sh 'cat mochawesome-report/mochawesome.json'
     }
 
