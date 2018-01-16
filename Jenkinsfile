@@ -55,19 +55,19 @@ node {
           // junit '*.xml'
 	}
     }
-    stage('Results') {
-      publishHTML([allowMissing: false,
-         alwaysLinkToLastBuild: true,
-         keepAll: true,
-         reportDir: 
-        'mochawesome-report/',
-         reportFiles: 'mochawesome.html',
-         reportName: 'Mocha Result Dashboard'
-         ])
-    }
-    post {
-      failure {
+   // stage('Results') {
+   //   publishHTML([allowMissing: false,
+   //      alwaysLinkToLastBuild: true,
+   //      keepAll: true,
+   //      reportDir: 
+   //     'mochawesome-report/',
+   //      reportFiles: 'mochawesome.html',
+   //      reportName: 'Mocha Result Dashboard'
+   //      ])
+   //  }
+   // post {
+    //  failure {
        // mail to: jack.li2@nirvana-info.com, subject: 'The pipline failed'  
-      }
-    }
+    //  }
+   // }
 }
