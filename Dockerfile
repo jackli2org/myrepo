@@ -18,7 +18,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# RUN npm test
+ RUN npm test
 
 EXPOSE 9010
 CMD [ "npm", "start" ]
