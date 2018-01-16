@@ -8,7 +8,7 @@ node {
             checkout scm
     }
     stage("Test") {
-      steps {
+      step {
 	 sh './test.sh'
          sh 'cat mochawesome-report/mochawesome.json'
 	}
