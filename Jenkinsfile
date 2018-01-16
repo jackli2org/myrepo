@@ -31,12 +31,12 @@ node {
         // sh 'docker-compose down'
               sh 'pwd'
               sh 'ls'
-          //    sh 'npm install'
-           //   sh 'npm test'
+              sh 'npm install'
+              sh 'npm test'
               sh 'ls'
               sh 'echo "test passed"'
 	    }
-            sh 'docker run app'
+           // sh 'docker run app'
            // sh 'cd /var/lib/jenkins/workspace/myrepo'
            //  sh 'npm run mocha'
     }
