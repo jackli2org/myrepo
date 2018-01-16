@@ -11,6 +11,7 @@ node {
          sh 'pwd'
          sh 'ls'
          sh 'docker ps'
+         sh 'docker-compose ps'
          sh 'docker-compose build'
          sh 'docker-compose up'
          sh 'docker-compose down'
