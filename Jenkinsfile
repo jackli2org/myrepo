@@ -10,12 +10,15 @@ node {
 
     stage("Build and start test image") {
             app = docker.build docker_image
+            println(app);
            // sh 'cd /var/lib/jenkins/workspace/myrepo'
            //  sh 'npm run mocha'
     }
     stage("Run test") {
         echo "start run test"
 	try {
+          sh 'pwd'
+          sh 'ls'
           // sh 'docker-compose down'
           step ([$class: 'CopyArtifact',
             projectName: 'myrepo',
