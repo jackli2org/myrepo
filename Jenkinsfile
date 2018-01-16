@@ -8,10 +8,8 @@ node {
             checkout scm
     }
     stage("Test") {
-      step {
 	 sh './test.sh'
          sh 'cat mochawesome-report/mochawesome.json'
-	}
     }
 
     stage("Build and start test image") {
@@ -21,6 +19,7 @@ node {
               sh 'ls'
               sh 'npm install'
               sh 'npm test'
+              sh 'ls'
               sh 'echo "test passed"'
 	    }
            // sh 'cd /var/lib/jenkins/workspace/myrepo'
