@@ -10,6 +10,7 @@ node {
 
     stage("Build and start test image") {
             app = docker.build docker_image
+            docker.run -p 5000:80 app
             println(app);
            // sh 'cd /var/lib/jenkins/workspace/myrepo'
            //  sh 'npm run mocha'
