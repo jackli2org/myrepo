@@ -15,7 +15,7 @@ RUN npm install
 # If you are building your code for production
 # RUN npm install --only=production
 
-COPY ./testfile*.js ./
+COPY testfile*.js ./
 
 RUN npm test
 
