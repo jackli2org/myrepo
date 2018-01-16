@@ -8,8 +8,8 @@ node {
             checkout scm
     }
     stage("Test") {
-	 sh './test.sh'
-         sh 'cat mochawesome-report/mochawesome.json'
+	// sh './test.sh'
+        // sh 'cat mochawesome-report/mochawesome.json'
     }
 
     stage("Build and start test image") {
