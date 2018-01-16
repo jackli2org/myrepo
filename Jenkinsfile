@@ -46,9 +46,9 @@ node {
           sh 'pwd'
           sh 'ls'
           // sh 'docker-compose down'
-          step ([$class: 'CopyArtifact',
-            projectName: 'myrepo',
-            filter: 'mochawesome-report/*']);
+         // step ([$class: 'CopyArtifact',
+         //   projectName: 'myrepo',
+         //   filter: 'mochawesome-report/*']);
 	} catch (error) {
           echo error;
 	} finally {
