@@ -22,7 +22,7 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "test": "mocha testfile --reporter mochawesome",
+    "test": "mocha testfile.js --reporter mochawesome",
     "eslint": "eslint test.js",
     "start": "node src/",
     "startWithInit": "INITFLAG=1 node src/",
