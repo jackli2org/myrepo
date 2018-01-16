@@ -17,9 +17,6 @@ node {
         echo "start run test"
 	try {
           // sh 'docker-compose down'
-          // sh 'docker-compose build'
-          // sh 'docker-compose up'
-	  // sh 'npm run mocha'
           step ([$class: 'CopyArtifact',
             projectName: 'myrepo',
             filter: 'mochawesome-report/*']);
@@ -38,5 +35,10 @@ node {
          reportFiles: 'mochawesome.html',
          reportName: 'Mocha Result Dashboard'
          ])
-   }
+    }
+    post {
+      failure {
+        mail to: jack.li2@nirvana-info.com, subject: 'The pipline failed'  
+      }
+    }
 }
