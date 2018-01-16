@@ -32,7 +32,7 @@ node {
               sh 'pwd'
               sh 'ls'
              // sh 'npm install'
-              sh 'sudo npm test'
+              sh 'npm test'
               sh 'ls'
               sh 'echo "test passed"'
 	    }
