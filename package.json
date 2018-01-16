@@ -26,7 +26,7 @@
     "eslint": "eslint test.js",
     "start": "node src/",
     "startWithInit": "INITFLAG=1 node src/",
-    "mocha": "mocha testfile"
+    "mocha": "mocha testfile --reporter mochawesome"
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -57,6 +57,7 @@
   "devDependencies": {
     "eslint": "^4.9.0",
     "mocha": "^4.0.1",
+    "mochawesome": "^3.0.1",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
   }
