@@ -31,8 +31,8 @@ node {
         // sh 'docker-compose down'
               sh 'pwd'
               sh 'ls'
-              sh 'npm install'
-              sh 'npm test'
+             // sh 'npm install'
+              sh 'sudo npm test'
               sh 'ls'
               sh 'echo "test passed"'
 	    }
