@@ -16,9 +16,9 @@ node {
     stage("Run test") {
         echo "start run test"
 	try {
-          sh 'docker-compose down'
-          sh 'docker-compose build'
-          sh 'docker-compose up'
+          // sh 'docker-compose down'
+          // sh 'docker-compose build'
+          // sh 'docker-compose up'
 	  // sh 'npm run mocha'
           step ([$class: 'CopyArtifact',
             projectName: 'myrepo',
