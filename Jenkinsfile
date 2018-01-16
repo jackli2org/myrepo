@@ -26,7 +26,7 @@ node {
 	} catch (error) {
           echo error;
 	} finally {
-          # junit '*.xml'
+          // junit '*.xml'
 	}
     }
     stage('Results') {
