@@ -38,7 +38,7 @@ node {
     }
     post {
       failure {
-        mail to: jack.li2@nirvana-info.com, subject: 'The pipline failed'  
+       // mail to: jack.li2@nirvana-info.com, subject: 'The pipline failed'  
       }
     }
 }
