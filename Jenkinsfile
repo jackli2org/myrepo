@@ -12,7 +12,7 @@ node {
             app = docker.build docker_image
             app.inside {
               sh 'pwd'
-              sh 'ls'
+              sh 'npm test'
               sh 'echo "test passed"'
 	    }
            // sh 'cd /var/lib/jenkins/workspace/myrepo'
