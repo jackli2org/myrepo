@@ -5,10 +5,8 @@ services:
     ports:
       - "9010:9010"
     command: ./entrypoint
-     volumes:
-      - .:/mochawesome-report
+    volumes:
+     - /var/dir
 volumes:
-  redis:
-    driver: local
-  dir:
+  mydir:
     driver: local
