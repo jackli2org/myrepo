@@ -12,6 +12,7 @@ node {
          sh 'ls'
          sh 'docker ps'
         // sh 'python --version'
+         sh 'docker-compose -version'
          sh 'docker-compose ps'
         // sh 'python --version'
         // sh 'docker-compose build'
