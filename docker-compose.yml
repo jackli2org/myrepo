@@ -1,12 +1,14 @@
 version: '2'
 services:
   myrepo:
-    container_name: myrepo
-    image: myrepo
-    links:
-      - "redis:redis"
-    ports: 
-      - "80:80"
+    build: ../myrepo
+    ports:
+      - "9010:9010"
+    command: ./entrypoint
+    # volumes:
+    #  - $REPO_BASE/warriortrading.hermes.demo-backend /src/app
+    depends_on:
+      - redis
   redis:
     container_name: redis
     image: redis:alpine

@@ -17,12 +17,12 @@ RUN npm install
 
 # Bundle app source
 COPY . .
-
+RUN chmod 755 entrypoint
 # RUN npm test
 
 EXPOSE 9010
 CMD [ "npm", "start" ]
 
-WORKDIR /src/app
-ENTRYPOINT ["entrypoint"]
+# WORKDIR /src/app
+# ENTRYPOINT ["./entrypoint"]
 

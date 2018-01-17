@@ -3,7 +3,7 @@ set -e
 
 echo 'begin entrypoint' 
 
-npm test
+npm run mocha
 
 exec "$@"
 
