@@ -11,6 +11,7 @@ node {
          sh 'pwd'
          sh 'ls'
          sh 'cd subdir'
+         sh 'ls'
          sh 'docker ps'
         // sh 'python --version'
          sh 'docker-compose -version'
