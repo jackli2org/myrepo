@@ -7,13 +7,6 @@ services:
     command: ./entrypoint
     # volumes:
     #  - $REPO_BASE/warriortrading.hermes.demo-backend /src/app
-    depends_on:
-      - redis
-  redis:
-    container_name: redis
-    image: redis:alpine
-    volumes:
-      - "redis:/data"
 volumes:
   redis:
     driver: local
