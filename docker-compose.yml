@@ -5,8 +5,8 @@ services:
     ports:
       - "9010:9010"
     command: ./entrypoint
-    # volumes:
-    #  - $REPO_BASE/warriortrading.hermes.demo-backend /src/app
+     volumes:
+      - .:/mochawesome-report
 volumes:
   redis:
     driver: local
