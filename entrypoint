@@ -9,7 +9,7 @@ cp -r mochawesome-report dir
 cd dir
 ls
 
-
+cd ..
 docker-compose down
 
 exec "$@"
