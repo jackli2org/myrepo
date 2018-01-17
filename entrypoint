@@ -10,7 +10,8 @@ cd dir
 ls
 
 cd ..
-docker-compose down
+ls
+# docker-compose down
 
 exec "$@"
 
