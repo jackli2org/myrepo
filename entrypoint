@@ -6,7 +6,7 @@ echo 'begin entrypoint'
 npm run mocha
 
 cp -r mochawesome-report dir
-cd /dir
+cd dir
 ls
 
 
