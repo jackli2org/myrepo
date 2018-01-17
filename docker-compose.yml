@@ -6,7 +6,7 @@ services:
       - "9010:9010"
     command: ./entrypoint
     volumes:
-     - /var/dir
+     - /var/lib/jenkins/workspace/testpip/myrepo:/var/dir
 volumes:
   mydir:
     driver: local
