@@ -15,9 +15,9 @@ node {
          sh 'docker-compose -version'
          sh 'docker-compose ps'
         // sh 'python --version'
-        // sh 'docker-compose build'
-        // sh 'docker-compose up'
-        // sh 'docker-compose down'
+         sh 'docker-compose build'
+         sh 'docker-compose up'
+         sh 'docker-compose down'
         	// sh './test.sh'
         // sh 'cat mochawesome-report/mochawesome.json'
     }
@@ -33,7 +33,7 @@ node {
               sh 'pwd'
               sh 'ls'
              // sh 'npm install'
-              sh 'npm test'
+            //  sh 'npm test'
               sh 'ls'
               sh 'echo "test passed"'
 	    }
