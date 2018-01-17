@@ -6,7 +6,8 @@ services:
       - "9010:9010"
     command: ./entrypoint
     volumes:
-     - /var/lib/jenkins/workspace/testpip/myrepo:/src/app
+     - /var/lib/jenkins/workspace/testpip/myrepo/mochawesome-report:/src/app/mochawesome-report
 volumes:
   mydir:
-    driver: local
+    external:
+     name: mydir

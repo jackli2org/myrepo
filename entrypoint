@@ -5,12 +5,12 @@ echo 'begin entrypoint'
 
 npm run mocha
 
-cp -r mochawesome-report mydir
-cd mydir
-ls
+ cp -r mochawesome-report mydir 
+ cd mydir
+ ls
 
-cd ..
-ls
+# cd ..
+# ls
 # docker-compose down
 
 exec "$@"
